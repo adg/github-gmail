@@ -1,8 +1,0 @@
-To install, open Chrome:
-
-1) chrome://extensions/
-2) Click "[+] Developer Mode" in top right
-3) "Load unpacked extension..."
-4) Pick this directory.
-
-Done.  It'll now auto-reload from source.
