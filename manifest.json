@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Gmail Extension",
+  "description": "This extension shows badges alongside Gmail issue mail notifications.",
+  "version": "1.0",
+  "permissions": ["https://mail.google.com/mail/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/mail/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
