@@ -17,6 +17,8 @@
 
 	var hashRe = /#.*\/[a-f0-9]+$/;
 	var issueRe = /^https:\/\/github.com\/([A-Za-z0-9-]+\/[A-Za-z0-9-]+\/issues\/[0-9]+)/
+	var pullRe = /^https:\/\/github.com\/([A-Za-z0-9-]+\/[A-Za-z0-9-]+\/pull\/[0-9]+)/
+
 	function addBadge() {
 		var hash = window.location.hash;
 		if (!hashRe.exec(hash)) return;
@@ -26,8 +28,11 @@
 			var as = ps[i].getElementsByTagName("a");
 			for (var j = 0; j < as.length; j++) {
 				var m = issueRe.exec(as[j].href);
+				if (!m) {
+					m = pullRe.exec(as[j].href);
+				}
 				if (!m) continue;
-				
+
 				console.log("match:", m[0]);
 
 				var magic = "azg";
