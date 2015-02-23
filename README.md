@@ -1,9 +1,13 @@
-Github Badges in Gmail
-======================
+Github Shields in Gmail
+=======================
 
 Show the status of Github Issues inside of Gmail:
 
 ![issues](http://cl.ly/image/3w04452I2k0P/issue-badge-gmail.png)
+
+And pull requests
+
+![pulls](http://cl.ly/image/0a1U0R1X1h0F/github-badge-pull.png)
 
 Installation
 ------------
