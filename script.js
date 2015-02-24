@@ -50,6 +50,12 @@ limitations under the License.
 				}
 				if (!m) continue;
 
+				// If a comment mentions another issue by number,
+				// GitHub will make a link to that other issue.
+				// We don't want those; we only want the one at the
+				// bottom that says "view it on GitHub".
+				if (as[j].textContent != "view it on GitHub") continue;
+
 				console.log("match:", m[0]);
 
 				var magic = "azg";
