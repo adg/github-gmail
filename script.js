@@ -33,8 +33,8 @@ limitations under the License.
 	}
 
 	var hashRe = /#.*\/[a-f0-9]+$/;
-	var issueRe = /^https:\/\/github.com\/([A-Za-z0-9-]+\/[A-Za-z0-9-]+\/issues\/[0-9]+)/
-	var pullRe = /^https:\/\/github.com\/([A-Za-z0-9-]+\/[A-Za-z0-9-]+\/pull\/[0-9]+)/
+	var issueRe = /^https:\/\/github.com\/([A-Za-z0-9-]+\/[\w-]+\/issues\/[0-9]+)/;
+	var pullRe = /^https:\/\/github.com\/([A-Za-z0-9-]+\/[\w-]+\/pull\/[0-9]+)/;
 
 	function addBadge() {
 		var hash = window.location.hash;
